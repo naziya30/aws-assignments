@@ -1,0 +1,85 @@
+1. //script to fetch all files from cd
+
+#!/bin/bash
+for i in *
+do
+ echo "$i
+ sleep 2
+done
+
+2. //script to fetch all files with specific intention
+
+#!/bin/bash
+for i in *.html
+do
+ echo "$i
+done
+
+3. //script to fetch all files belongs to /etc/*.conf
+
+#!/bin/bash
+for i in /etc/*.conf
+do
+ echo "$i
+done
+
+4. //while loop print from range 4 to 10
+
+#!/bin/bash
+init =4
+while [[$init -le 10]]
+do
+ echo "$init
+ ((init++))
+done
+
+5. //while loop print from range 4 to 10 reverse
+
+#!/bin/bash
+init =10
+while [[$init -ge 1]]
+do
+ echo "$init
+ ((init--))
+done
+
+6. //while loop print infinite
+
+#!/bin/bash
+init = 4
+while true
+do
+ echo "$init
+done
+
+7. //real time scripts to copy all files
+
+#!/bin/bash
+for i in /etc/*.conf
+do
+ echo "$i
+ cp $i/jsp
+done
+
+8. //real time scripts to find the count of files in the given directory
+
+#!/bin/bash
+for i in./jsp/*
+do
+ echo "$i
+ ((count++))
+done
+echo "the total number of files: $count"
+
+9. //real time scripts to move files
+
+#!/bin/bash
+for i in./jsp/*
+do
+ echo "$i
+ mv $i/qsp
+done
+
+
+
+
